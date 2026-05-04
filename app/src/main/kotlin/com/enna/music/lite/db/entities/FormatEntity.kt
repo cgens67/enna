@@ -1,0 +1,28 @@
+/*
+ * 恩纳 (Enna) Project Original (2026)
+ * Chartreux Westia (github.com/恩纳 (Enna))
+ * Licensed Under GPL-3.0 | see git history for contributors
+ * Don't remove this copyright holder!
+ */
+
+
+
+
+package com.enna.music.lite.db.entities
+
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity(tableName = "format")
+data class FormatEntity(
+    @PrimaryKey val id: String,
+    val itag: Int,
+    val mimeType: String,
+    val codecs: String,
+    val bitrate: Int,
+    val sampleRate: Int?,
+    val contentLength: Long,
+    val loudnessDb: Double?,
+    val perceptualLoudnessDb: Double? = null,
+    val playbackUrl: String?
+)

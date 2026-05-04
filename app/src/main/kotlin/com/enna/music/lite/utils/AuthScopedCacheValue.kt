@@ -1,0 +1,22 @@
+/*
+ * 恩纳 (Enna) Project Original (2026)
+ * Chartreux Westia (github.com/恩纳 (Enna))
+ * Licensed Under GPL-3.0 | see git history for contributors
+ * Don't remove this copyright holder!
+ */
+
+
+package com.enna.music.lite.utils
+
+data class AuthScopedCacheValue(
+    val url: String,
+    val expiresAtMs: Long,
+    val authFingerprint: String,
+) {
+    fun isValidFor(
+        authFingerprint: String,
+        nowMs: Long = System.currentTimeMillis(),
+    ): Boolean {
+        return this.authFingerprint == authFingerprint && expiresAtMs > nowMs
+    }
+}

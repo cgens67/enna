@@ -1,0 +1,21 @@
+/*
+ * 恩纳 (Enna) Project Original (2026)
+ * Chartreux Westia (github.com/恩纳 (Enna))
+ * Licensed Under GPL-3.0 | see git history for contributors
+ * Don't remove this copyright holder!
+ */
+
+
+
+
+package com.enna.music.lite.innertube.models
+
+import kotlinx.serialization.Serializable
+
+@Serializable
+data class MusicPlaylistShelfRenderer(
+    val playlistId: String?,
+    val contents: List<MusicShelfRenderer.Content> = emptyList(),
+    val collapsedItemCount: Int? = null,
+    val continuations: List<Continuation>? = null,
+)
