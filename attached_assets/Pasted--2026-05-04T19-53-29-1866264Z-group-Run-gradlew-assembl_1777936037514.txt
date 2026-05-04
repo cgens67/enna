@@ -1,0 +1,114 @@
+﻿2026-05-04T19:53:29.1866264Z ##[group]Run ./gradlew assembleMobileUniversalDebug
+./gradlew assembleMobileUniversalDebug
+shell: /usr/bin/bash -e {0}
+env:
+  JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.10-7/x64
+  JAVA_HOME_21_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.10-7/x64
+  GRADLE_ACTION_ID: gradle/actions/setup-gradle
+  GRADLE_USER_HOME: /home/runner/.gradle
+  GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+  DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+  DEVELOCITY_INJECTION_CUSTOM_VALUE: gradle-actions
+  GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+  PULL_REQUEST: false
+  GITHUB_EVENT_NAME: push
+  LASTFM_API_KEY: 
+  LASTFM_SECRET: 
+  TOGETHER_BEARER_TOKEN: 
+  CANVAS_BEARER_TOKEN: 
+Downloading https://services.gradle.org/distributions/gradle-9.4.1-bin.zip
+.............10%.............20%.............30%.............40%.............50%.............60%..............70%.............80%.............90%.............100%
+
+Welcome to Gradle 9.4.1!
+
+Here are the highlights of this release:
+ - Java 26 support
+ - Non-class-based JVM tests
+ - Enhanced console progress bar
+
+For more details see https://docs.gradle.org/9.4.1/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+Calculating task graph as no cached configuration is available for tasks: assembleMobileUniversalDebug
+> Task :innertube:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preMobileUniversalDebugBuild UP-TO-DATE
+> Task :kugou:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:mergeMobileUniversalDebugNativeDebugMetadata NO-SOURCE
+> Task :kugou:processResources NO-SOURCE
+> Task :innertube:processResources NO-SOURCE
+> Task :lrclib:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :lrclib:processResources NO-SOURCE
+> Task :lastfm:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :kugou:compileKotlin
+> Task :lrclib:compileKotlin
+> Task :lastfm:compileKotlin
+> Task :lrclib:compileJava NO-SOURCE
+> Task :lrclib:classes UP-TO-DATE
+> Task :lastfm:compileJava NO-SOURCE
+> Task :lastfm:processResources NO-SOURCE
+> Task :kugou:compileJava NO-SOURCE
+> Task :kugou:classes UP-TO-DATE
+> Task :lastfm:classes UP-TO-DATE
+> Task :lrclib:jar
+> Task :lastfm:jar
+> Task :kugou:jar
+> Task :kizzy:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :betterlyrics:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :betterlyrics:processResources NO-SOURCE
+> Task :kizzy:processResources NO-SOURCE
+> Task :simpmusic:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :simpmusic:compileKotlin
+> Task :simpmusic:compileJava NO-SOURCE
+> Task :simpmusic:processResources NO-SOURCE
+> Task :simpmusic:classes UP-TO-DATE
+> Task :simpmusic:jar
+> Task :canvas:checkKotlinGradlePluginConfigurationErrors SKIPPED
+e: file:///home/runner/work/enna/enna/canvas/src/main/kotlin/com/enna/music/lite/canvas/ArchiveTuneCanvas.kt:35:11 Objects cannot have constructors.
+e: file:///home/runner/work/enna/enna/canvas/src/main/kotlin/com/enna/music/lite/canvas/ArchiveTuneCanvas.kt:35:12 An explicit type is required on a value parameter.
+
+e: file:///home/runner/work/enna/enna/canvas/src/main/kotlin/com/enna/music/lite/canvas/ArchiveTuneCanvas.kt:35:16 Syntax error: Parameters must have type annotation.
+e: file:///home/runner/work/enna/enna/canvas/src/main/kotlin/com/enna/music/lite/canvas/ArchiveTuneCanvas.kt:35:17 Syntax error: Expecting a top level declaration.
+> Task :canvas:compileKotlin FAILED
+e: file:///home/runner/work/enna/enna/canvas/src/main/kotlin/com/enna/music/lite/canvas/ArchiveTuneCanvas.kt:35:24 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/canvas/src/main/kotlin/com/enna/music/lite/canvas/ArchiveTuneCanvas.kt:35:24 Function declaration must have a name.
+e: file:///home/runner/work/enna/enna/canvas/src/main/kotlin/com/enna/music/lite/canvas/ArchiveTuneCanvas.kt:36:5 Modifier 'private' is not applicable to 'local variable'.
+e: file:///home/runner/work/enna/enna/canvas/src/main/kotlin/com/enna/music/lite/canvas/ArchiveTuneCanvas.kt:36:13 Modifier 'const' is not applicable to 'local variable'.
+e: file:///home/runner/work/enna/enna/canvas/src/main/kotlin/com/enna/music/lite/canvas/ArchiveTuneCanvas.kt:38:5 This annotation is not applicable to target 'local variable'. Applicable targets: field
+e: file:///home/runner/work/enna/enna/canvas/src/main/kotlin/com/enna/music/lite/canvas/ArchiveTuneCanvas.kt:39:5 Modifier 'private' is not applicable to 'local variable'.
+e: file:///home/runner/work/enna/enna/canvas/src/main/kotlin/com/enna/music/lite/canvas/ArchiveTuneCanvas.kt:42:9 'this' is not defined in this context.
+e: file:///home/runner/work/enna/enna/canvas/src/main/kotlin/com/enna/music/lite/canvas/ArchiveTuneCanvas.kt:42:14 Unresolved reference 'bearerToken'.
+e: file:///home/runner/work/enna/enna/canvas/src/main/kotlin/com/enna/music/lite/canvas/ArchiveTuneCanvas.kt:45:5 Modifier 'private' is not applicable to 'local variable'.
+e: file:///home/runner/work/enna/enna/canvas/src/main/kotlin/com/enna/music/lite/canvas/ArchiveTuneCanvas.kt:51:5 Modifier 'private' is not applicable to 'local variable'.
+e: file:///home/runner/work/enna/enna/canvas/src/main/kotlin/com/enna/music/lite/canvas/ArchiveTuneCanvas.kt:72:5 Modifier 'private' is not applicable to 'local class'.
+e: file:///home/runner/work/enna/enna/canvas/src/main/kotlin/com/enna/music/lite/canvas/ArchiveTuneCanvas.kt:77:5 Modifier 'private' is not applicable to 'local variable'.
+e: file:///home/runner/work/enna/enna/canvas/src/main/kotlin/com/enna/music/lite/canvas/ArchiveTuneCanvas.kt:78:5 Modifier 'private' is not applicable to 'local variable'.
+e: file:///home/runner/work/enna/enna/canvas/src/main/kotlin/com/enna/music/lite/canvas/ArchiveTuneCanvas.kt:85:19 Unresolved reference 'cacheKey'.
+e: file:///home/runner/work/enna/enna/canvas/src/main/kotlin/com/enna/music/lite/canvas/ArchiveTuneCanvas.kt:116:19 Unresolved reference 'cacheKey'.
+e: file:///home/runner/work/enna/enna/canvas/src/main/kotlin/com/enna/music/lite/canvas/ArchiveTuneCanvas.kt:145:19 Unresolved reference 'cacheKey'.
+e: file:///home/runner/work/enna/enna/canvas/src/main/kotlin/com/enna/music/lite/canvas/ArchiveTuneCanvas.kt:178:5 Modifier 'private' is not applicable to 'local function'.
+
+> Task :betterlyrics:compileKotlin
+> Task :kizzy:compileKotlin
+> Task :innertube:compileKotlin
+w: file:///home/runner/work/enna/enna/innertube/src/main/kotlin/com/enna/music/lite/innertube/pages/AlbumPage.kt:124:39 Unnecessary safe call on a non-null receiver of type 'List<MusicShelfRenderer.Content>'.
+w: file:///home/runner/work/enna/enna/innertube/src/main/kotlin/com/enna/music/lite/innertube/pages/AlbumPage.kt:137:43 Unnecessary safe call on a non-null receiver of type 'List<MusicShelfRenderer.Content>'.
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_2-1777924418957.json
+
+12 actionable tasks: 12 executed
+FAILURE: Build failed with an exception.
+Configuration cache entry stored.
+
+* What went wrong:
+Execution failed for task ':canvas:compileKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.btapi.BuildToolsApiCompilationWork
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 2m 28s
+Process completed with exit code 1.
