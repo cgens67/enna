@@ -1,0 +1,128 @@
+Run ./gradlew assembleMobileX86_64Release --no-configuration-cache
+Downloading https://services.gradle.org/distributions/gradle-9.4.1-bin.zip
+.............10%.............20%.............30%.............40%.............50%.............60%..............70%.............80%.............90%.............100%
+
+Welcome to Gradle 9.4.1!
+
+Here are the highlights of this release:
+ - Java 26 support
+ - Non-class-based JVM tests
+ - Enhanced console progress bar
+
+For more details see https://docs.gradle.org/9.4.1/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+> Task :innertube:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :lastfm:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :lrclib:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :kugou:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :lrclib:compileKotlin
+> Task :innertube:processResources NO-SOURCE
+> Task :kugou:processResources NO-SOURCE
+> Task :lrclib:compileJava NO-SOURCE
+> Task :lrclib:processResources NO-SOURCE
+> Task :lrclib:classes UP-TO-DATE
+> Task :lastfm:compileKotlin
+> Task :kugou:compileKotlin
+> Task :kugou:compileJava NO-SOURCE
+> Task :kugou:classes UP-TO-DATE
+> Task :lastfm:compileJava NO-SOURCE
+> Task :lastfm:processResources NO-SOURCE
+> Task :lastfm:classes UP-TO-DATE
+> Task :lrclib:jar
+> Task :lastfm:jar
+> Task :kugou:jar
+> Task :betterlyrics:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :kizzy:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :simpmusic:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :simpmusic:compileKotlin
+> Task :betterlyrics:processResources NO-SOURCE
+> Task :kizzy:processResources NO-SOURCE
+> Task :simpmusic:compileJava NO-SOURCE
+> Task :simpmusic:processResources NO-SOURCE
+> Task :simpmusic:classes UP-TO-DATE
+> Task :simpmusic:jar
+> Task :canvas:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :canvas:compileKotlin
+> Task :canvas:compileJava NO-SOURCE
+> Task :canvas:processResources NO-SOURCE
+> Task :canvas:classes UP-TO-DATE
+> Task :canvas:jar
+> Task :shazamkit:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :betterlyrics:compileKotlin
+> Task :betterlyrics:compileJava NO-SOURCE
+> Task :betterlyrics:classes UP-TO-DATE
+> Task :betterlyrics:jar
+> Task :shazamkit:processResources NO-SOURCE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preMobileX86_64ReleaseBuild UP-TO-DATE
+> Task :innertube:compileKotlin
+> Task :app:mergeMobileX86_64ReleaseJniLibFolders
+> Task :kizzy:compileKotlin
+> Task :kizzy:compileJava NO-SOURCE
+> Task :kizzy:classes UP-TO-DATE
+> Task :kizzy:jar
+> Task :shazamkit:compileKotlin
+> Task :shazamkit:compileJava NO-SOURCE
+> Task :shazamkit:classes UP-TO-DATE
+> Task :shazamkit:jar
+
+> Task :innertube:compileKotlin
+w: file:///home/runner/work/enna/enna/innertube/src/main/kotlin/com/enna/music/lite/innertube/pages/AlbumPage.kt:124:39 Unnecessary safe call on a non-null receiver of type 'List<MusicShelfRenderer.Content>'.
+w: file:///home/runner/work/enna/enna/innertube/src/main/kotlin/com/enna/music/lite/innertube/pages/AlbumPage.kt:137:43 Unnecessary safe call on a non-null receiver of type 'List<MusicShelfRenderer.Content>'.
+
+> Task :innertube:compileJava NO-SOURCE
+> Task :innertube:classes UP-TO-DATE
+> Task :innertube:jar
+> Task :app:checkMobileX86_64ReleaseDuplicateClasses
+> Task :app:mergeMobileX86_64ReleaseNativeLibs
+> Task :app:mergeMobileX86_64ReleaseArtProfile
+> Task :app:generateMobileX86_64ReleaseBuildConfig
+> Task :app:extractMobileX86_64ReleaseSupportedLocales
+> Task :app:mapMobileX86_64ReleaseSourceSetPaths
+> Task :app:stripMobileX86_64ReleaseDebugSymbols
+> Task :app:generateMobileX86_64ReleaseLocaleConfig
+> Task :app:generateMobileX86_64ReleaseResources
+> Task :app:extractMobileX86_64ReleaseNativeSymbolTables
+> Task :app:packageMobileX86_64ReleaseResources
+> Task :app:mergeMobileX86_64ReleaseNativeDebugMetadata NO-SOURCE
+> Task :app:processMobileX86_64ReleaseNavigationResources
+> Task :app:parseMobileX86_64ReleaseLocalResources
+> Task :app:javaPreCompileMobileX86_64Release
+> Task :app:generateMobileX86_64ReleaseRFile
+> Task :app:compileMobileX86_64ReleaseNavigationResources
+> Task :app:checkMobileX86_64ReleaseAarMetadata
+> Task :app:createMobileX86_64ReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksMobileX86_64Release
+> Task :app:mergeMobileX86_64ReleaseResources FAILED
+> Task :app:processMobileX86_64ReleaseMainManifest
+> Task :app:kspMobileX86_64ReleaseKotlin
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_2-1777997541925.json
+
+41 actionable tasks: 41 executed
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:mergeMobileX86_64ReleaseResources'.
+> Multiple task action failures occurred:
+   > A failure occurred while executing com.android.build.gradle.internal.res.Aapt2CompileRunnable
+      > Android resource compilation failed
+        ERROR: /home/runner/work/enna/enna/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png: AAPT: error: file failed to compile.
+            
+   > A failure occurred while executing com.android.build.gradle.internal.res.Aapt2CompileRunnable
+      > Android resource compilation failed
+        ERROR: /home/runner/work/enna/enna/app/src/main/res/mipmap-mdpi/ic_launcher.png: AAPT: error: file failed to compile.
+            
+   > A failure occurred while executing com.android.build.gradle.internal.res.Aapt2CompileRunnable
+      > Android resource compilation failed
+        ERROR: /home/runner/work/enna/enna/app/src/main/res/mipmap-mdpi/ic_launcher_monochrome.png: AAPT: error: file failed to compile.
+            
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 2m 47s
+Error: Process completed with exit code 1.

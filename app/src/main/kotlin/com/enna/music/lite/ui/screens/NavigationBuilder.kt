@@ -80,7 +80,7 @@ import com.enna.music.lite.ui.screens.settings.DiscordSettings
 import com.enna.music.lite.ui.screens.settings.DebugSettings
 import com.enna.music.lite.ui.screens.settings.IntegrationScreen
 import com.enna.music.lite.ui.screens.settings.LastFMSettings
-import com.enna.music.lite.ui.screens.settings.MusicTogetherScreen
+
 import com.enna.music.lite.ui.screens.settings.PalettePickerScreen
 import com.enna.music.lite.ui.screens.settings.PlayerSettings
 import com.enna.music.lite.ui.screens.settings.PoTokenScreen
@@ -363,9 +363,7 @@ fun NavGraphBuilder.navigationBuilder(
     composable("settings/integration") {
         IntegrationScreen(navController, scrollBehavior)
     }
-    composable("settings/music_together") {
-        MusicTogetherScreen(navController, scrollBehavior)
-    }
+
     composable("settings/lastfm") {
         LastFMSettings(navController, scrollBehavior)
     }

@@ -194,11 +194,6 @@ fun Queue(
     var locked by rememberPreference(QueueEditLockKey, defaultValue = true)
     var infiniteQueueEnabled by rememberPreference(AutoLoadMoreKey, defaultValue = true)
     val infiniteQueueLoading by playerConnection.service.infiniteQueueLoading.collectAsState()
-    val togetherSessionState by playerConnection.service.togetherSessionState.collectAsState()
-    val togetherForcesLock =
-        togetherSessionState is com.enna.music.lite.together.TogetherSessionState.Joined &&
-            (togetherSessionState as com.enna.music.lite.together.TogetherSessionState.Joined).role is com.enna.music.lite.together.TogetherRole.Guest
-    val effectiveLocked = locked || togetherForcesLock
 
     val playerDesignStyle by rememberEnumPreference(
         key = PlayerDesignStyleKey,
@@ -595,7 +590,7 @@ fun Queue(
                     isPlaying = isPlaying,
                     repeatMode = repeatMode,
                     shuffleModeEnabled = playerConnection.player.shuffleModeEnabled,
-                    locked = effectiveLocked,
+                    locked = locked,
                     songCount = queueWindows.size,
                     queueDuration = queueLength,
                     infiniteQueueEnabled = infiniteQueueEnabled,
@@ -629,11 +624,7 @@ fun Queue(
                         }
                     },
                     onLockClick = {
-                        if (togetherForcesLock) {
-                            Toast.makeText(context, R.string.not_allowed, Toast.LENGTH_SHORT).show()
-                        } else {
-                            locked = !locked
-                        }
+                        locked = !locked
                     },
                     onInfiniteQueueClick = {
                         val nextInfiniteQueueEnabled = !infiniteQueueEnabled
@@ -766,7 +757,7 @@ fun Queue(
                                                 contentDescription = null,
                                             )
                                         }
-                                        if (!effectiveLocked) {
+                                        if (!locked) {
                                             IconButton(
                                                 onClick = { },
                                                 modifier = Modifier
@@ -801,34 +792,11 @@ fun Queue(
                                                     if (index == currentWindowIndex) {
                                                         playerConnection.player.togglePlayPause()
                                                     } else {
-                                                        val joined =
-                                                            togetherSessionState as? com.enna.music.lite.together.TogetherSessionState.Joined
-                                                        val isGuest = joined?.role is com.enna.music.lite.together.TogetherRole.Guest
-                                                        if (isGuest) {
-                                                            if (joined?.roomState?.settings?.allowGuestsToControlPlayback != true) {
-                                                                Toast.makeText(context, R.string.not_allowed, Toast.LENGTH_SHORT).show()
-                                                                return@combinedClickable
-                                                            }
-                                                            val trackId =
-                                                                window.mediaItem.metadata?.id?.trim().orEmpty().ifBlank {
-                                                                    window.mediaItem.mediaId.trim()
-                                                                }
-                                                            if (trackId.isBlank()) return@combinedClickable
-                                                            Toast.makeText(context, R.string.together_requesting_song_change, Toast.LENGTH_SHORT).show()
-                                                            playerConnection.service.requestTogetherControl(
-                                                                com.enna.music.lite.together.ControlAction.SeekToTrack(
-                                                                    trackId = trackId,
-                                                                    positionMs = 0L,
-                                                                ),
-                                                            )
-                                                            shouldScrollToCurrent = false
-                                                        } else {
-                                                            playerConnection.player.seekToDefaultPosition(
-                                                                window.firstPeriodIndex,
-                                                            )
-                                                            playerConnection.player.playWhenReady = true
-                                                            shouldScrollToCurrent = false
-                                                        }
+                                                        playerConnection.player.seekToDefaultPosition(
+                                                            window.firstPeriodIndex,
+                                                        )
+                                                        playerConnection.player.playWhenReady = true
+                                                        shouldScrollToCurrent = false
                                                     }
                                                 }
                                             },
@@ -845,7 +813,7 @@ fun Queue(
                             }
                         }
 
-                        if (effectiveLocked) {
+                        if (locked) {
                             content()
                         } else {
                             SwipeToDismissBox(

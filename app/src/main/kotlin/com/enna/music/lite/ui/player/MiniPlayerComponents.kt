@@ -82,7 +82,7 @@ import com.enna.music.lite.extensions.togglePlayPause
 
 import com.enna.music.lite.models.MediaMetadata
 import com.enna.music.lite.playback.PlayerConnection
-import com.enna.music.lite.together.TogetherSessionState
+
 import kotlin.math.absoluteValue
 import kotlin.math.roundToInt
 import androidx.compose.foundation.layout.Arrangement
@@ -431,7 +431,6 @@ fun NewMiniPlayerContent(
     val isPlaying by playerConnection.isPlaying.collectAsState()
     val playbackState by playerConnection.playbackState.collectAsState()
     val mediaMetadata by playerConnection.mediaMetadata.collectAsState()
-    val togetherSessionState by playerConnection.service.togetherSessionState.collectAsState()
     val canSkipPrevious by playerConnection.canSkipPrevious.collectAsState()
     val canSkipNext by playerConnection.canSkipNext.collectAsState()
 
@@ -456,8 +455,6 @@ fun NewMiniPlayerContent(
             MiniPlayerInfo(mediaMetadata = it)
         } ?: Spacer(Modifier.weight(1f))
 
-        if (togetherSessionState !is TogetherSessionState.Idle) {
-
         MiniPlayerTransportControls(
             isPlaying = isPlaying,
             playbackState = playbackState,
@@ -467,5 +464,4 @@ fun NewMiniPlayerContent(
             playerConnection = playerConnection
         )
     }
-}
 }

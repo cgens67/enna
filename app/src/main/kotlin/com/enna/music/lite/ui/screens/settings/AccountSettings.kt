@@ -354,7 +354,7 @@ fun AccountSettings(
                     isLoggedIn = isLoggedIn,
                     onPlaylistClick = { showPlaylistDialog = true },
                     onIntegrationClick = { navController.navigate("settings/integration") },
-                    onMusicTogetherClick = { navController.navigate("settings/music_together") },
+
                     onTokenClick = {
                         if (!isLoggedIn) {
                             showTokenEditor = true
@@ -803,7 +803,6 @@ private fun QuickAccessGrid(
     isLoggedIn: Boolean,
     onPlaylistClick: () -> Unit,
     onIntegrationClick: () -> Unit,
-    onMusicTogetherClick: () -> Unit,
     onTokenClick: () -> Unit,
 ) {
     Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
@@ -829,27 +828,14 @@ private fun QuickAccessGrid(
             )
         }
 
-        Row(
+        QuickAccessTile(
             modifier = Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.spacedBy(10.dp),
-        ) {
-            QuickAccessTile(
-                modifier = Modifier.weight(1f),
-                icon = painterResource(R.drawable.fire),
-                label = stringResource(R.string.music_together),
-                containerColor = MaterialTheme.colorScheme.primaryContainer,
-                contentColor = MaterialTheme.colorScheme.onPrimaryContainer,
-                onClick = onMusicTogetherClick,
-            )
-            QuickAccessTile(
-                modifier = Modifier.weight(1f),
-                icon = painterResource(R.drawable.token),
-                label = stringResource(R.string.advanced_login),
-                containerColor = MaterialTheme.colorScheme.surfaceContainerHigh,
-                contentColor = MaterialTheme.colorScheme.onSurface,
-                onClick = onTokenClick,
-            )
-        }
+            icon = painterResource(R.drawable.token),
+            label = stringResource(R.string.advanced_login),
+            containerColor = MaterialTheme.colorScheme.surfaceContainerHigh,
+            contentColor = MaterialTheme.colorScheme.onSurface,
+            onClick = onTokenClick,
+        )
     }
 }
 
