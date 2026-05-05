@@ -107,7 +107,7 @@ import com.enna.music.lite.constants.SwipeThumbnailKey
 import com.enna.music.lite.constants.SwipeSensitivityKey
 import com.enna.music.lite.constants.SwipeToSongKey
 import com.enna.music.lite.constants.HidePlayerThumbnailKey
-import com.enna.music.lite.constants.恩纳 (Enna)CanvasKey
+import com.enna.music.lite.constants.EnnaCanvasKey
 import com.enna.music.lite.constants.ThumbnailCornerRadiusKey
 import com.enna.music.lite.constants.CropThumbnailToSquareKey
 import com.enna.music.lite.constants.DisableBlurKey
@@ -159,8 +159,8 @@ fun AppearanceSettings(
         HidePlayerThumbnailKey,
         defaultValue = false
     )
-    val (ennaCanvasEnabled, on恩纳 (Enna)CanvasEnabledChange) = rememberPreference(
-        恩纳 (Enna)CanvasKey,
+    val (ennaCanvasEnabled, onEnnaCanvasEnabledChange) = rememberPreference(
+        EnnaCanvasKey,
         defaultValue = false
     )
     val (thumbnailCornerRadius, onThumbnailCornerRadiusChange) = rememberPreference(
@@ -257,7 +257,7 @@ fun AppearanceSettings(
     val availableBackgroundStyles = PlayerBackgroundStyle.entries.filter {
         it != PlayerBackgroundStyle.BLUR || Build.VERSION.SDK_INT >= Build.VERSION_CODES.S
     }
-    val is恩纳 (Enna)CanvasAvailable = playerDesignStyle != PlayerDesignStyle.V7
+    val isEnnaCanvasAvailable = playerDesignStyle != PlayerDesignStyle.V7
 
     val isSystemInDarkTheme = isSystemInDarkTheme()
     val useDarkTheme =
@@ -497,15 +497,15 @@ fun AppearanceSettings(
 
         SwitchPreference(
             title = { Text(stringResource(R.string.enna_canvas)) },
-            description = if (is恩纳 (Enna)CanvasAvailable) {
+            description = if (isEnnaCanvasAvailable) {
                 stringResource(R.string.enna_canvas_desc)
             } else {
                 stringResource(R.string.enna_canvas_v7_desc)
             },
             icon = { Icon(painterResource(R.drawable.motion_photos_on), null) },
-            checked = ennaCanvasEnabled && is恩纳 (Enna)CanvasAvailable,
-            onCheckedChange = on恩纳 (Enna)CanvasEnabledChange,
-            isEnabled = is恩纳 (Enna)CanvasAvailable,
+            checked = ennaCanvasEnabled && isEnnaCanvasAvailable,
+            onCheckedChange = onEnnaCanvasEnabledChange,
+            isEnabled = isEnnaCanvasAvailable,
         )
       
 

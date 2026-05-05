@@ -32,8 +32,9 @@ import java.util.concurrent.ConcurrentHashMap
 import kotlin.time.Duration.Companion.hours
 import kotlin.time.DurationUnit
 
-object 恩纳 (Enna)Canvas {
+object EnnaCanvas {
     private const val BASE_URL = "https://artwork-enna.恩纳 (Enna).cloud/"
+    private const val CACHE_TTL_MS = 60_000L
 
     @Volatile
     private var bearerToken: String? = null
@@ -75,7 +76,6 @@ object 恩纳 (Enna)Canvas {
     )
 
     private val cache = ConcurrentHashMap<String, CacheEntry>()
-    private val ttlMs = 60_000L
 
     suspend fun getBySongArtist(
         song: String,
@@ -106,7 +106,7 @@ object 恩纳 (Enna)Canvas {
         cache[key] =
             CacheEntry(
                 value = value,
-                expiresAtMs = System.currentTimeMillis() + ttlMs,
+                expiresAtMs = System.currentTimeMillis() + CACHE_TTL_MS,
             )
 
         return value
@@ -135,7 +135,7 @@ object 恩纳 (Enna)Canvas {
         cache[key] =
             CacheEntry(
                 value = value,
-                expiresAtMs = System.currentTimeMillis() + ttlMs,
+                expiresAtMs = System.currentTimeMillis() + CACHE_TTL_MS,
             )
 
         return value
@@ -164,7 +164,7 @@ object 恩纳 (Enna)Canvas {
         cache[key] =
             CacheEntry(
                 value = value,
-                expiresAtMs = System.currentTimeMillis() + ttlMs,
+                expiresAtMs = System.currentTimeMillis() + CACHE_TTL_MS,
             )
 
         return value

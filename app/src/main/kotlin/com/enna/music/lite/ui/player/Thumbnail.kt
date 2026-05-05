@@ -90,7 +90,7 @@ import coil3.compose.AsyncImage
 import androidx.compose.material3.Icon
 import com.enna.music.lite.LocalPlayerConnection
 import com.enna.music.lite.R
-import com.enna.music.lite.canvas.恩纳 (Enna)Canvas
+import com.enna.music.lite.canvas.EnnaCanvas
 import com.enna.music.lite.canvas.CanvasArtwork
 import com.enna.music.lite.constants.PlayerBackgroundStyle
 import com.enna.music.lite.constants.PlayerBackgroundStyleKey
@@ -99,7 +99,7 @@ import com.enna.music.lite.constants.PlayerDesignStyleKey
 import com.enna.music.lite.constants.PlayerHorizontalPadding
 import com.enna.music.lite.constants.SeekExtraSeconds
 import com.enna.music.lite.constants.SwipeThumbnailKey
-import com.enna.music.lite.constants.恩纳 (Enna)CanvasKey
+import com.enna.music.lite.constants.EnnaCanvasKey
 import com.enna.music.lite.constants.MaxCanvasCacheSizeKey
 import com.enna.music.lite.constants.ThumbnailCornerRadiusKey
 import com.enna.music.lite.constants.CropThumbnailToSquareKey
@@ -282,7 +282,7 @@ fun Thumbnail(
 
     val swipeThumbnail by rememberPreference(SwipeThumbnailKey, true)
     val hidePlayerThumbnail by rememberPreference(HidePlayerThumbnailKey, false)
-    val ennaCanvasEnabled by rememberPreference(恩纳 (Enna)CanvasKey, false)
+    val ennaCanvasEnabled by rememberPreference(EnnaCanvasKey, false)
     val playerDesignStyle by rememberEnumPreference(
         key = PlayerDesignStyleKey,
         defaultValue = PlayerDesignStyle.V4,
@@ -590,7 +590,7 @@ fun Thumbnail(
                                             }
 
                                         candidates.firstNotNullOfOrNull { (song, artist) ->
-                                            恩纳 (Enna)Canvas
+                                            EnnaCanvas
                                                 .getBySongArtist(
                                                     song = song,
                                                     artist = artist,

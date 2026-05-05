@@ -41,7 +41,7 @@ import com.enna.music.lite.innertube.YouTube
 import com.enna.music.lite.innertube.models.YouTubeLocale
 import com.enna.music.lite.kugou.KuGou
 import com.enna.music.lite.lastfm.LastFM
-import com.enna.music.lite.canvas.恩纳 (Enna)Canvas
+import com.enna.music.lite.canvas.EnnaCanvas
 import com.enna.music.lite.ui.player.CanvasArtworkPlaybackCache
 import dagger.hilt.android.HiltAndroidApp
 import kotlinx.coroutines.DelicateCoroutinesApi
@@ -103,7 +103,7 @@ class App : Application(), SingletonImageLoader.Factory {
 
     private fun initializeCriticalSync() {
         CanvasArtworkPlaybackCache.init(this)
-        恩纳 (Enna)Canvas.initialize(BuildConfig.CANVAS_BEARER_TOKEN)
+        EnnaCanvas.initialize(BuildConfig.CANVAS_BEARER_TOKEN)
 
         val locale = Locale.getDefault()
         val languageTag = locale.toLanguageTag().replace("-Hant", "")
