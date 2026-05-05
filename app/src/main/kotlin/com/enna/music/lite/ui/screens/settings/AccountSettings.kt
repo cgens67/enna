@@ -836,6 +836,10 @@ private fun QuickAccessGrid(
             QuickAccessTile(
                 modifier = Modifier.weight(1f),
                 icon = painterResource(R.drawable.fire),
+                label = stringResource(R.string.music_together),
+                containerColor = MaterialTheme.colorScheme.primaryContainer,
+                contentColor = MaterialTheme.colorScheme.onPrimaryContainer,
+                onClick = onMusicTogetherClick,
             )
             QuickAccessTile(
                 modifier = Modifier.weight(1f),

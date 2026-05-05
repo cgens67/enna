@@ -1,0 +1,130 @@
+Run ./gradlew assembleMobileUniversalDebug
+Downloading https://services.gradle.org/distributions/gradle-9.4.1-bin.zip
+.............10%.............20%.............30%.............40%.............50%.............60%..............70%.............80%.............90%.............100%
+Welcome to Gradle 9.4.1!
+Here are the highlights of this release:
+ - Java 26 support
+ - Non-class-based JVM tests
+ - Enhanced console progress bar
+For more details see https://docs.gradle.org/9.4.1/release-notes.html
+Starting a Gradle Daemon (subsequent builds will be faster)
+Calculating task graph as no cached configuration is available for tasks: assembleMobileUniversalDebug
+> Task :kugou:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :innertube:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preMobileUniversalDebugBuild UP-TO-DATE
+> Task :app:mergeMobileUniversalDebugNativeDebugMetadata NO-SOURCE
+> Task :innertube:processResources NO-SOURCE
+> Task :kugou:processResources NO-SOURCE
+> Task :lrclib:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :lrclib:processResources NO-SOURCE
+> Task :lastfm:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :kugou:compileKotlin
+> Task :lrclib:compileKotlin
+> Task :lastfm:compileKotlin
+> Task :kugou:compileJava NO-SOURCE
+> Task :lrclib:compileJava NO-SOURCE
+> Task :lrclib:classes UP-TO-DATE
+> Task :lastfm:compileJava NO-SOURCE
+> Task :kugou:classes UP-TO-DATE
+> Task :lastfm:processResources NO-SOURCE
+> Task :lastfm:classes UP-TO-DATE
+> Task :lrclib:jar
+> Task :lastfm:jar
+> Task :kugou:jar
+> Task :kizzy:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :betterlyrics:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :betterlyrics:processResources NO-SOURCE
+> Task :kizzy:processResources NO-SOURCE
+> Task :simpmusic:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :simpmusic:compileKotlin
+> Task :simpmusic:compileJava NO-SOURCE
+> Task :simpmusic:processResources NO-SOURCE
+> Task :simpmusic:classes UP-TO-DATE
+> Task :simpmusic:jar
+> Task :canvas:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :canvas:compileKotlin
+> Task :canvas:compileJava NO-SOURCE
+> Task :canvas:processResources NO-SOURCE
+> Task :canvas:classes UP-TO-DATE
+> Task :canvas:jar
+> Task :shazamkit:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :betterlyrics:compileKotlin
+> Task :betterlyrics:compileJava NO-SOURCE
+> Task :betterlyrics:classes UP-TO-DATE
+> Task :betterlyrics:jar
+> Task :shazamkit:processResources NO-SOURCE
+> Task :app:generateMobileUniversalDebugBuildConfig
+> Task :app:extractMobileUniversalDebugSupportedLocales
+> Task :app:mapMobileUniversalDebugSourceSetPaths
+> Task :kizzy:compileKotlin
+> Task :kizzy:compileJava NO-SOURCE
+> Task :kizzy:classes UP-TO-DATE
+> Task :kizzy:jar
+> Task :app:generateMobileUniversalDebugResources
+> Task :innertube:compileKotlin
+> Task :app:generateMobileUniversalDebugLocaleConfig
+> Task :app:processMobileUniversalDebugNavigationResources
+> Task :app:packageMobileUniversalDebugResources
+> Task :app:javaPreCompileMobileUniversalDebug
+> Task :app:generateMobileUniversalDebugAssets UP-TO-DATE
+> Task :app:parseMobileUniversalDebugLocalResources
+> Task :shazamkit:compileKotlin
+> Task :shazamkit:compileJava NO-SOURCE
+> Task :shazamkit:classes UP-TO-DATE
+> Task :shazamkit:jar
+> Task :app:mergeMobileUniversalDebugAssets
+> Task :app:compressMobileUniversalDebugAssets
+> Task :app:desugarMobileUniversalDebugFileDependencies
+> Task :app:checkMobileUniversalDebugDuplicateClasses
+> Task :innertube:compileKotlin
+w: file:///home/runner/work/enna/enna/innertube/src/main/kotlin/com/enna/music/lite/innertube/pages/AlbumPage.kt:124:39 Unnecessary safe call on a non-null receiver of type 'List<MusicShelfRenderer.Content>'.
+w: file:///home/runner/work/enna/enna/innertube/src/main/kotlin/com/enna/music/lite/innertube/pages/AlbumPage.kt:137:43 Unnecessary safe call on a non-null receiver of type 'List<MusicShelfRenderer.Content>'.
+> Task :innertube:compileJava NO-SOURCE
+> Task :innertube:classes UP-TO-DATE
+> Task :innertube:jar
+> Task :app:generateMobileUniversalDebugRFile
+> Task :app:mergeExtDexMobileUniversalDebug
+> Task :app:checkMobileUniversalDebugAarMetadata
+> Task :app:kspMobileUniversalDebugKotlin
+> Task :app:compileMobileUniversalDebugNavigationResources
+> Task :app:mergeLibDexMobileUniversalDebug
+> Task :app:createMobileUniversalDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksMobileUniversalDebug
+> Task :app:mergeMobileUniversalDebugResources
+> Task :app:mergeMobileUniversalDebugJniLibFolders
+> Task :app:processMobileUniversalDebugMainManifest
+> Task :app:processMobileUniversalDebugManifest
+> Task :app:processMobileUniversalDebugManifestForPackage
+> Task :app:processMobileUniversalDebugResources
+> Task :app:validateSigningMobileUniversalDebug
+> Task :app:writeMobileUniversalDebugAppMetadata
+> Task :app:writeMobileUniversalDebugSigningConfigVersions
+> Task :app:mergeMobileUniversalDebugNativeLibs
+> Task :app:stripMobileUniversalDebugDebugSymbols
+> Task :app:compileMobileUniversalDebugKotlin
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/player/MiniPlayerComponents.kt:470:2 Syntax error: Expecting '}'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/AccountSettings.kt:838:17 No value passed for parameter 'label'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/AccountSettings.kt:838:17 No value passed for parameter 'containerColor'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/AccountSettings.kt:838:17 No value passed for parameter 'contentColor'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/AccountSettings.kt:838:17 No value passed for parameter 'onClick'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/SettingsDataBuilders.kt:65:10 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/SettingsDataBuilders.kt:66:5 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/SettingsDataBuilders.kt:82:6 Syntax error: Expecting ')'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/SettingsScreen.kt:142:25 Unresolved reference 'buildInternalItems'.
+> Task :app:compileMobileUniversalDebugKotlin FAILED
+FAILURE: Build failed with an exception.
+* What went wrong:
+Execution failed for task ':app:compileMobileUniversalDebugKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.btapi.BuildToolsApiCompilationWork
+   > Compilation error. See log for more details
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+BUILD FAILED in 5m 19s
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_2-1777996430975.json
+51 actionable tasks: 51 executed
+Configuration cache entry stored.
+Error: Process completed with exit code 1.

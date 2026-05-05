@@ -61,9 +61,7 @@ fun buildIntegrationActions(
     navController: NavController,
     resetSearch: () -> Unit,
 ): List<SettingsIntegrationAction> =
-    listOf(
-        ),
-    )
+    listOf()
 
 @Composable
 fun buildSettingsGroups(
@@ -73,10 +71,11 @@ fun buildSettingsGroups(
     context: Context,
     resetSearch: () -> Unit,
 ): List<SettingsGroup> =
-    buildList {
-        add(
-            SettingsGroup(
-                title = stringResource(R.string.settings_section_ui),
-                items = listOf(
-        ),
-    )
+    listOf()
+
+@Composable
+fun buildInternalItems(
+    navController: NavController,
+    resetSearch: () -> Unit,
+): List<SettingsItem> =
+    listOf()
