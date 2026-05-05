@@ -116,7 +116,7 @@ import com.enna.music.lite.R
 import com.enna.music.lite.constants.CustomThemeColorKey
 import com.enna.music.lite.constants.DynamicThemeKey
 import com.enna.music.lite.ui.component.IconButton
-import com.enna.music.lite.ui.theme.恩纳 (Enna)Theme
+import com.enna.music.lite.ui.theme.EnnaTheme
 import com.enna.music.lite.ui.theme.ColorSaver
 import com.enna.music.lite.ui.theme.ThemeSeedPalette
 import com.enna.music.lite.ui.theme.ThemeSeedPaletteCodec
@@ -416,7 +416,7 @@ private fun ThemeHeroPreview(
     val animatedTertiary by animateColorAsState(palette.tertiary, animationSpec = spring(stiffness = Spring.StiffnessMediumLow), label = "previewTertiary")
     val animatedNeutral by animateColorAsState(palette.neutral, animationSpec = spring(stiffness = Spring.StiffnessMediumLow), label = "previewNeutral")
 
-    恩纳 (Enna)Theme(
+    EnnaTheme(
         darkTheme = isDark,
         seedPalette = ThemeSeedPalette(animatedPrimary, animatedSecondary, animatedTertiary, animatedNeutral),
     ) {
@@ -624,7 +624,7 @@ private fun ThemeRichPreview(
     val animatedTertiary by animateColorAsState(palette.tertiary, animationSpec = spring(stiffness = Spring.StiffnessMediumLow), label = "richPreviewTertiary")
     val animatedNeutral by animateColorAsState(palette.neutral, animationSpec = spring(stiffness = Spring.StiffnessMediumLow), label = "richPreviewNeutral")
 
-    恩纳 (Enna)Theme(
+    EnnaTheme(
         darkTheme = isDark,
         seedPalette = ThemeSeedPalette(animatedPrimary, animatedSecondary, animatedTertiary, animatedNeutral),
     ) {

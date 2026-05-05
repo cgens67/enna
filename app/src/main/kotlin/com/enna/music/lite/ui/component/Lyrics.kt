@@ -211,10 +211,10 @@ import kotlin.time.Duration.Companion.seconds
 
 private val AppleMusicEasing = CubicBezierEasing(0.25f, 0.1f, 0.25f, 1.0f)
 private val SmoothDecelerateEasing = CubicBezierEasing(0.0f, 0.0f, 0.2f, 1.0f)
-private const val 恩纳 (Enna)_AUTO_SCROLL_DURATION = 1500L
-private const val 恩纳 (Enna)_INITIAL_SCROLL_DURATION = 1000L
-private const val 恩纳 (Enna)_SEEK_DURATION = 800L
-private const val 恩纳 (Enna)_FAST_SEEK_DURATION = 600L
+private const val ENNA_AUTO_SCROLL_DURATION = 1500L
+private const val ENNA_INITIAL_SCROLL_DURATION = 1000L
+private const val ENNA_SEEK_DURATION = 800L
+private const val ENNA_FAST_SEEK_DURATION = 600L
 private const val LyricsWordSyncLeadMs = 300L
 
 val LyricsPreviewTime = 2.seconds

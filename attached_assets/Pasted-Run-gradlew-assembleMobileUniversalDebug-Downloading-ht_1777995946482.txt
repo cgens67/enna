@@ -1,0 +1,319 @@
+Run ./gradlew assembleMobileUniversalDebug
+Downloading https://services.gradle.org/distributions/gradle-9.4.1-bin.zip
+.............10%.............20%.............30%.............40%.............50%.............60%..............70%.............80%.............90%.............100%
+
+Welcome to Gradle 9.4.1!
+
+Here are the highlights of this release:
+ - Java 26 support
+ - Non-class-based JVM tests
+ - Enhanced console progress bar
+
+For more details see https://docs.gradle.org/9.4.1/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+Calculating task graph as no cached configuration is available for tasks: assembleMobileUniversalDebug
+> Task :kugou:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :innertube:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preMobileUniversalDebugBuild UP-TO-DATE
+> Task :app:mergeMobileUniversalDebugNativeDebugMetadata NO-SOURCE
+> Task :innertube:processResources NO-SOURCE
+> Task :kugou:processResources NO-SOURCE
+> Task :lrclib:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :lrclib:processResources NO-SOURCE
+> Task :lastfm:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :kugou:compileKotlin
+> Task :lastfm:compileKotlin
+> Task :lrclib:compileKotlin
+> Task :lrclib:compileJava NO-SOURCE
+> Task :lastfm:compileJava NO-SOURCE
+> Task :kugou:compileJava NO-SOURCE
+> Task :lastfm:processResources NO-SOURCE
+> Task :kugou:classes UP-TO-DATE
+> Task :lastfm:classes UP-TO-DATE
+> Task :lrclib:classes UP-TO-DATE
+> Task :lrclib:jar
+> Task :lastfm:jar
+> Task :kugou:jar
+> Task :betterlyrics:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :kizzy:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :betterlyrics:processResources NO-SOURCE
+> Task :kizzy:processResources NO-SOURCE
+> Task :simpmusic:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :simpmusic:compileKotlin
+> Task :simpmusic:compileJava NO-SOURCE
+> Task :simpmusic:processResources NO-SOURCE
+> Task :simpmusic:classes UP-TO-DATE
+> Task :simpmusic:jar
+> Task :canvas:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :canvas:compileKotlin
+> Task :canvas:compileJava NO-SOURCE
+> Task :canvas:processResources NO-SOURCE
+> Task :canvas:classes UP-TO-DATE
+> Task :canvas:jar
+> Task :shazamkit:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :betterlyrics:compileKotlin
+> Task :betterlyrics:compileJava NO-SOURCE
+> Task :betterlyrics:classes UP-TO-DATE
+> Task :betterlyrics:jar
+> Task :shazamkit:processResources NO-SOURCE
+> Task :app:generateMobileUniversalDebugBuildConfig
+> Task :app:extractMobileUniversalDebugSupportedLocales
+> Task :app:mapMobileUniversalDebugSourceSetPaths
+> Task :kizzy:compileKotlin
+> Task :kizzy:compileJava NO-SOURCE
+> Task :kizzy:classes UP-TO-DATE
+> Task :kizzy:jar
+> Task :app:generateMobileUniversalDebugResources
+> Task :app:generateMobileUniversalDebugLocaleConfig
+> Task :innertube:compileKotlin
+> Task :shazamkit:compileKotlin
+> Task :shazamkit:compileJava NO-SOURCE
+> Task :shazamkit:classes UP-TO-DATE
+> Task :app:processMobileUniversalDebugNavigationResources
+> Task :shazamkit:jar
+> Task :app:generateMobileUniversalDebugAssets UP-TO-DATE
+> Task :app:mergeMobileUniversalDebugAssets
+> Task :app:compressMobileUniversalDebugAssets
+> Task :app:packageMobileUniversalDebugResources
+> Task :app:javaPreCompileMobileUniversalDebug
+> Task :app:desugarMobileUniversalDebugFileDependencies
+> Task :app:parseMobileUniversalDebugLocalResources
+> Task :app:checkMobileUniversalDebugDuplicateClasses
+
+> Task :innertube:compileKotlin
+w: file:///home/runner/work/enna/enna/innertube/src/main/kotlin/com/enna/music/lite/innertube/pages/AlbumPage.kt:124:39 Unnecessary safe call on a non-null receiver of type 'List<MusicShelfRenderer.Content>'.
+w: file:///home/runner/work/enna/enna/innertube/src/main/kotlin/com/enna/music/lite/innertube/pages/AlbumPage.kt:137:43 Unnecessary safe call on a non-null receiver of type 'List<MusicShelfRenderer.Content>'.
+
+> Task :app:generateMobileUniversalDebugRFile
+> Task :innertube:compileJava NO-SOURCE
+> Task :innertube:classes UP-TO-DATE
+> Task :innertube:jar
+> Task :app:mergeExtDexMobileUniversalDebug
+> Task :app:checkMobileUniversalDebugAarMetadata
+> Task :app:compileMobileUniversalDebugNavigationResources
+> Task :app:kspMobileUniversalDebugKotlin
+> Task :app:mergeMobileUniversalDebugResources
+> Task :app:createMobileUniversalDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksMobileUniversalDebug
+> Task :app:mergeLibDexMobileUniversalDebug
+> Task :app:processMobileUniversalDebugMainManifest
+> Task :app:mergeMobileUniversalDebugJniLibFolders
+> Task :app:processMobileUniversalDebugManifest
+> Task :app:processMobileUniversalDebugManifestForPackage
+> Task :app:processMobileUniversalDebugResources
+> Task :app:validateSigningMobileUniversalDebug
+> Task :app:writeMobileUniversalDebugAppMetadata
+> Task :app:writeMobileUniversalDebugSigningConfigVersions
+> Task :app:mergeMobileUniversalDebugNativeLibs
+> Task :app:stripMobileUniversalDebugDebugSymbols
+> Task :app:compileMobileUniversalDebugKotlin
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/DebugActivity.kt:61:40 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/DebugActivity.kt:61:41 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/DebugActivity.kt:61:45 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/DebugActivity.kt:61:46 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/DebugActivity.kt:61:51 Syntax error: imports are only allowed in the beginning of file.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/DebugActivity.kt:83:17 Unresolved reference 'Enna'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/DebugActivity.kt:83:22 Unresolved reference 'Theme'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/DebugActivity.kt:84:17 @Composable invocations can only happen from the context of a @Composable function
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/MainActivity.kt:246:40 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/MainActivity.kt:246:41 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/MainActivity.kt:246:45 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/MainActivity.kt:246:46 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/MainActivity.kt:246:51 Syntax error: imports are only allowed in the beginning of file.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/MainActivity.kt:645:17 Unresolved reference 'Enna'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/MainActivity.kt:645:22 Unresolved reference 'Theme'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/MainActivity.kt:646:17 'val' cannot be reassigned.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/MainActivity.kt:646:17 Only expressions are allowed in this context.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/MainActivity.kt:646:27 Assignment type mismatch: actual type is 'Boolean', but 'DarkMode' was expected.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/MainActivity.kt:646:41 Syntax error: Expecting ')'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/MainActivity.kt:646:41 Syntax error: Unexpected tokens (use ';' to separate expressions on the same line).
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/MainActivity.kt:647:17 'val' cannot be reassigned.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/MainActivity.kt:647:38 Syntax error: Unexpected tokens (use ';' to separate expressions on the same line).
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/MainActivity.kt:648:40 Syntax error: Unexpected tokens (use ';' to separate expressions on the same line).
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/MainActivity.kt:649:17 Unresolved reference 'seedPalette'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/MainActivity.kt:649:88 Syntax error: Unexpected tokens (use ';' to separate expressions on the same line).
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/MainActivity.kt:650:17 'val' cannot be reassigned.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/MainActivity.kt:650:54 Syntax error: Unexpected tokens (use ';' to separate expressions on the same line).
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/MainActivity.kt:651:17 'val' cannot be reassigned.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/MainActivity.kt:651:46 Syntax error: Unexpected tokens (use ';' to separate expressions on the same line).
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/MainActivity.kt:652:13 Syntax error: Expecting an element.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/MainActivity.kt:653:21 @Composable invocations can only happen from the context of a @Composable function
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/MainActivity.kt:658:78 @Composable invocations can only happen from the context of a @Composable function
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/component/Lyrics.kt:214:9 Const 'val' must have an initializer.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/component/Lyrics.kt:214:15 Property must be initialized.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/component/Lyrics.kt:214:19 Conflicting declarations:
+val 恩纳: ??? (Cannot infer variable type without initializer / getter / delegate)
+val 恩纳: ??? (Cannot infer variable type without initializer / getter / delegate)
+val 恩纳: ??? (Cannot infer variable type without initializer / getter / delegate)
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/component/Lyrics.kt:214:22 Syntax error: Property getter or setter expected.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/component/Lyrics.kt:215:9 Const 'val' must have an initializer.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/component/Lyrics.kt:215:15 Property must be initialized.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/component/Lyrics.kt:215:19 Conflicting declarations:
+val 恩纳: ??? (Cannot infer variable type without initializer / getter / delegate)
+val 恩纳: ??? (Cannot infer variable type without initializer / getter / delegate)
+val 恩纳: ??? (Cannot infer variable type without initializer / getter / delegate)
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/component/Lyrics.kt:215:22 Syntax error: Property getter or setter expected.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/component/Lyrics.kt:216:9 Const 'val' must have an initializer.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/component/Lyrics.kt:216:15 Property must be initialized.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/component/Lyrics.kt:216:19 Conflicting declarations:
+val 恩纳: ??? (Cannot infer variable type without initializer / getter / delegate)
+val 恩纳: ??? (Cannot infer variable type without initializer / getter / delegate)
+val 恩纳: ??? (Cannot infer variable type without initializer / getter / delegate)
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/component/Lyrics.kt:216:22 Syntax error: Property getter or setter expected.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/component/Lyrics.kt:217:9 Const 'val' must have an initializer.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/component/Lyrics.kt:217:15 Property must be initialized.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/component/Lyrics.kt:217:19 Conflicting declarations:
+val 恩纳: ??? (Cannot infer variable type without initializer / getter / delegate)
+val 恩纳: ??? (Cannot infer variable type without initializer / getter / delegate)
+val 恩纳: ??? (Cannot infer variable type without initializer / getter / delegate)
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/component/Lyrics.kt:217:22 Syntax error: Property getter or setter expected.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/player/MiniPlayerComponents.kt:470:2 Syntax error: Expecting '}'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/AccountSettings.kt:838:17 No value passed for parameter 'label'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/AccountSettings.kt:838:17 No value passed for parameter 'containerColor'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/AccountSettings.kt:838:17 No value passed for parameter 'contentColor'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/AccountSettings.kt:838:17 No value passed for parameter 'onClick'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/SettingsDataBuilders.kt:65:10 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/SettingsDataBuilders.kt:66:5 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/SettingsDataBuilders.kt:82:6 Syntax error: Expecting ')'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/SettingsScreen.kt:142:25 Unresolved reference 'buildInternalItems'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:119:40 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:119:41 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:119:45 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:119:46 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:119:51 Syntax error: imports are only allowed in the beginning of file.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:419:9 Unresolved reference 'Enna'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:419:14 Unresolved reference 'Theme'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:420:9 Unresolved reference 'darkTheme'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:420:9 Only expressions are allowed in this context.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:420:27 Syntax error: Expecting ')'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:420:27 Syntax error: Unexpected tokens (use ';' to separate expressions on the same line).
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:421:9 Unresolved reference 'seedPalette'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:421:110 Syntax error: Unexpected tokens (use ';' to separate expressions on the same line).
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:422:5 Syntax error: Expecting an element.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:423:9 @Composable invocations can only happen from the context of a @Composable function
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:429:35 @Composable invocations can only happen from the context of a @Composable function
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:429:77 @Composable invocations can only happen from the context of a @Composable function
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:430:38 @Composable invocations can only happen from the context of a @Composable function
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:627:9 Unresolved reference 'Enna'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:627:14 Unresolved reference 'Theme'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:628:9 Unresolved reference 'darkTheme'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:628:9 Only expressions are allowed in this context.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:628:27 Syntax error: Expecting ')'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:628:27 Syntax error: Unexpected tokens (use ';' to separate expressions on the same line).
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:629:9 Unresolved reference 'seedPalette'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:629:110 Syntax error: Unexpected tokens (use ';' to separate expressions on the same line).
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:630:5 Syntax error: Expecting an element.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:631:26 @Composable invocations can only happen from the context of a @Composable function
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:632:27 @Composable invocations can only happen from the context of a @Composable function
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:634:28 @Composable invocations can only happen from the context of a @Composable function
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:635:29 @Composable invocations can only happen from the context of a @Composable function
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:636:25 @Composable invocations can only happen from the context of a @Composable function
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:637:27 @Composable invocations can only happen from the context of a @Composable function
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:638:30 @Composable invocations can only happen from the context of a @Composable function
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:639:28 @Composable invocations can only happen from the context of a @Composable function
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:640:22 @Composable invocations can only happen from the context of a @Composable function
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:642:9 @Composable invocations can only happen from the context of a @Composable function
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:648:35 @Composable invocations can only happen from the context of a @Composable function
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:648:77 @Composable invocations can only happen from the context of a @Composable function
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/screens/settings/ThemeCreatorScreen.kt:649:38 @Composable invocations can only happen from the context of a @Composable function
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:61:1 Function '恩纳' must have a body.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:61:9 An explicit type is required on a value parameter.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:61:14 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:61:19 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:62:5 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:62:14 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:62:16 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:62:24 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:62:26 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:62:45 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:62:46 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:62:47 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:63:5 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:63:14 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:63:16 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:63:24 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:63:26 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:63:31 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:64:5 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:64:15 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:64:17 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:64:23 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:64:25 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:64:42 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:65:5 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:65:16 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:65:18 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:65:34 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:65:36 Syntax error: Expecting a top level declaration.
+
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:65:38 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:65:42 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:66:5 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:66:22 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:66:24 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:66:32 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:66:34 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:66:39 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:67:5 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:67:18 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:67:20 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:67:28 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:67:30 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:67:35 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:68:5 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:68:12 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:68:29 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:68:32 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:68:36 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:69:1 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:69:3 Syntax error: Expecting a top level declaration.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:69:3 Functions which invoke @Composable functions must be marked with the @Composable annotation
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:69:3 Function declaration must have a name.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:70:32 @Composable invocations can only happen from the context of a @Composable function
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:72:10 Unresolved reference 'seedPalette'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:72:33 Unresolved reference 'themeColor'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:74:22 @Composable invocations can only happen from the context of a @Composable function
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:74:31 Unresolved reference 'useSystemFont'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:75:13 Unresolved reference 'useSystemFont'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:79:9 @Composable invocations can only happen from the context of a @Composable function
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:79:18 Unresolved reference 'seedPalette'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:79:31 Unresolved reference 'themeColor'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:79:43 Unresolved reference 'darkTheme'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:80:17 Unresolved reference 'seedPalette'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:82:31 Unresolved reference 'seedPalette'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:83:30 Unresolved reference 'darkTheme'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:88:32 Unresolved reference 'themeColor'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:89:30 Unresolved reference 'darkTheme'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:96:17 Unresolved reference 'darkTheme'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:101:23 @Composable invocations can only happen from the context of a @Composable function
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:101:49 Unresolved reference 'pureBlack'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:101:60 Unresolved reference 'darkTheme'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:102:13 Unresolved reference 'darkTheme'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:102:26 Unresolved reference 'pureBlack'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:105:35 Unresolved reference 'disableAnimations'.
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:105:71 @Composable invocations can only happen from the context of a @Composable function
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:107:28 @Composable invocations can only happen from the context of a @Composable function
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:117:5 @Composable invocations can only happen from the context of a @Composable function
+e: file:///home/runner/work/enna/enna/app/src/main/kotlin/com/enna/music/lite/ui/theme/Theme.kt:121:19 Unresolved reference 'content'.
+> Task :app:compileMobileUniversalDebugKotlin FAILED
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_2-1777993536983.json
+
+51 actionable tasks: 51 executed
+FAILURE: Build failed with an exception.
+Configuration cache entry stored.
+
+* What went wrong:
+Execution failed for task ':app:compileMobileUniversalDebugKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.btapi.BuildToolsApiCompilationWork
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 5m 24s
+Error: Process completed with exit code 1.

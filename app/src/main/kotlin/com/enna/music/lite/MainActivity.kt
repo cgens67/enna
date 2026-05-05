@@ -243,7 +243,7 @@ import com.enna.music.lite.ui.screens.search.OnlineSearchScreen
 import com.enna.music.lite.ui.screens.settings.DarkMode
 import com.enna.music.lite.ui.screens.settings.DiscordPresenceManager
 import com.enna.music.lite.ui.screens.settings.NavigationTab
-import com.enna.music.lite.ui.theme.恩纳 (Enna)Theme
+import com.enna.music.lite.ui.theme.EnnaTheme
 import com.enna.music.lite.ui.theme.ColorSaver
 import com.enna.music.lite.ui.theme.DefaultThemeColor
 import com.enna.music.lite.ui.theme.extractThemeColor
@@ -642,7 +642,7 @@ class MainActivity : ComponentActivity() {
                 }
             }
 
-            恩纳 (Enna)Theme(
+            EnnaTheme(
                 darkTheme = useDarkTheme,
                 pureBlack = pureBlack,
                 themeColor = themeColor,

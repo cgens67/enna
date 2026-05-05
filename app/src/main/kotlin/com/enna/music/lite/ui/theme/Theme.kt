@@ -58,7 +58,7 @@ data class ThemeSeedPalette(
 
 @OptIn(ExperimentalMaterial3ExpressiveApi::class)
 @Composable
-fun 恩纳 (Enna)Theme(
+fun EnnaTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     pureBlack: Boolean = false,
     themeColor: Color = DefaultThemeColor,
