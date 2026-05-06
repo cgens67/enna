@@ -61,6 +61,9 @@ jobs:
           export PATH=$ANDROID_SDK_ROOT/cmdline-tools/latest/bin:$ANDROID_SDK_ROOT/platform-tools:$PATH
           sdkmanager "platform-tools" "platforms;android-37" "build-tools;37.0.0" || true
 
+      - name: Make gradlew executable
+        run: chmod +x gradlew
+
       - name: Build APK (assemble Release)
         run: ./gradlew :app:assembleRelease --no-daemon --stacktrace
 
